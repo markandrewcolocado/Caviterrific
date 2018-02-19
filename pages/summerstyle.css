@@ -1,0 +1,6 @@
+body {
+	background-image: url("../images/BG/summerbg.jpg");
+	background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}

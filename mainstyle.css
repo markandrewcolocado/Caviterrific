@@ -1,0 +1,222 @@
+ /*start of video style*/
+* { box-sizing: border-box; }
+.video-background {
+    background: #fff;
+    position: absolute;
+    top: 0; 
+    right: 0; 
+    bottom: 0; 
+    left: 0;
+    z-index: -99;
+    overflow: hidden;
+}
+
+.video-foreground,
+.video-background iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 110vh;
+    pointer-events: none;
+}
+
+@media (min-aspect-ratio: 16/9) {
+    .video-foreground {
+    height: 300%;
+    top: -5%;
+}
+}
+
+@media (max-aspect-ratio: 16/9) {
+  .video-foreground {
+    width: 300%;
+    left: -100%;
+}
+
+}
+@media all and (max-width: 600px) {
+.vid-info {
+    width: 50%;
+    padding: .5rem;
+}
+
+.vid-info h1 {
+    margin-bottom: .2rem;
+}
+}
+
+@media all and (max-width: 500px) {
+.vid-info .acronym {
+    display: none;
+}
+}
+/* end of video style */
+
+/*BG-img*/
+.main-banner-2 {
+    background-image: url(./images/BG/adventurebg3.jpg);
+    background-repeat: no-repeat;
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.row button {
+    margin-left: 32vw;
+    margin-top: 10vh;
+    margin-bottom: 10vh;
+    width: 30%;
+    border-radius: 25px;
+}
+
+/*header block and opacity*/
+.jumbo {
+    height: 100vh;
+    position: relative;
+}
+
+.block-top {
+    height: 7vw;
+    background-color: black;
+    z-index: -1;
+}
+
+.block-btm {
+    height: 7vw;
+    width: 100%;
+    background-color: black;
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -2;
+}
+
+.lowopacity {
+    background-color: dodgerblue;
+    opacity: 0.1;
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: -3;
+}
+/*end of header block and opacity*/
+
+/*start of body styles*/
+
+#ban2header img {
+    margin: 0 auto;
+    width: 60%;
+}
+
+#ban2button {
+    height: 100px;
+    border: 1px solid black;
+}
+
+#ban4header img {
+    margin: 0 auto;
+}
+
+#ban4button {
+    height: 100px;
+    border: 1px solid black;
+}
+
+.tourcontainer {
+    padding-top: 4vw;
+}
+
+.tourcontent {
+    position: relative;
+    width: 50%;
+    margin: 2vw 0;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 100%;
+    left: 0;
+    right: 0;
+    background-color: #008CBA;
+    opacity: 0.8;
+    overflow: hidden;
+    width: 100%;
+    height:0;
+    transition: .5s ease;
+}
+
+.tourcontent:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.text {
+    color: white;
+    font-size: 15px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    text-align: center;
+}
+
+h3 small {
+color: white !important;
+}
+
+.main-banner-3 {
+    background-image: url(./images/BG/festivalbg3.jpg);
+    background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+/*polaroid*/
+div.polaroid {
+    border: 1vw solid white;
+    margin-left: 3vw;
+    width: 80%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 15px;
+    -webkit-transition: width 2s, height 2s, -webkit-transform 2s; /* Safari */
+    transition: width 2s, height 2s, transform 2s;
+}
+
+.polaroid div.container {
+    margin-top: 1vw;
+    padding-bottom: 1vw;
+}
+
+.polaroid img {
+    width: 100%;
+}
+
+div.polaroid:hover {
+    height: 90%;
+    width: 90%;
+    transform: rotate(-10deg);
+}
+
+.main-banner-4 {
+    background-image: url(./images/BG/summerbg.jpg);
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+}
+/*end of body styles*/
+
+.content4 {
+    margin-top: 5vh;
+}
+
+.content4 .ban4txt {
+    margin-top: 3vh;
+}
+
+.banner4container {
+    padding: 5vw 0;
+}
+

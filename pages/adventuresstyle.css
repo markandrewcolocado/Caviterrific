@@ -1,0 +1,11 @@
+body {
+	background-image: url("../images/BG/adventurebg3.jpg");
+	background-position: top;
+    background-attachment: fixed;
+    background-size: cover;
+}
+
+.wtrfall-content h1,
+.wtrfall-content p {
+	background-color: white;
+}
